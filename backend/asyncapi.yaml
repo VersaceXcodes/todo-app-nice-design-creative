@@ -1,0 +1,175 @@
+asyncapi: 2.0.0
+info:
+  title: Creative ToDo App Realtime API
+  version: 1.0.0
+  description: Realtime API for updating the Creative ToDo App frontend with live data.
+servers:
+  - url: ws://localhost:3000
+    protocol: ws
+    description: Development server
+channels:
+  user/{user_id}/tasks:
+    subscribe:
+      summary: Subscribe to task updates for a specific user
+      operationId: subscribeToUserTasks
+      parameters:
+        user_id:
+          description: ID of the user
+          schema:
+            type: string
+      message:
+        summary: User Task Update
+        payload:
+          type: object
+          properties:
+            task_id:
+              type: string
+            user_id:
+              type: string
+            name:
+              type: string
+            description:
+              type: string
+              nullable: true
+            due_date:
+              type: string
+              nullable: true
+            priority:
+              type: string
+            category_id:
+              type: string
+              nullable: true
+            is_completed:
+              type: boolean
+            created_at:
+              type: string
+            updated_at:
+              type: string
+  user/{user_id}/categories:
+    subscribe:
+      summary: Subscribe to category updates for a specific user
+      operationId: subscribeToUserCategories
+      parameters:
+        user_id:
+          description: ID of the user
+          schema:
+            type: string
+      message:
+        summary: User Category Update
+        payload:
+          type: object
+          properties:
+            category_id:
+              type: string
+            user_id:
+              type: string
+            name:
+              type: string
+            color_code:
+              type: string
+            created_at:
+              type: string
+            updated_at:
+              type: string
+  user/{user_id}/preferences:
+    subscribe:
+      summary: Subscribe to user preference updates
+      operationId: subscribeToUserPreferences
+      parameters:
+        user_id:
+          description: ID of the user
+          schema:
+            type: string
+      message:
+        summary: User Preference Update
+        payload:
+          type: object
+          properties:
+            user_id:
+              type: string
+            theme:
+              type: string
+            default_view:
+              type: string
+            email_notifications:
+              type: boolean
+            in_app_notifications:
+              type: boolean
+  user/{user_id}/reminders:
+    subscribe:
+      summary: Subscribe to task reminder updates for a specific user
+      operationId: subscribeToUserReminders
+      parameters:
+        user_id:
+          description: ID of the user
+          schema:
+            type: string
+      message:
+        summary: User Task Reminder Update
+        payload:
+          type: object
+          properties:
+            reminder_id:
+              type: string
+            task_id:
+              type: string
+            reminder_time:
+              type: string
+components:
+  parameters:
+    user_id:
+      name: user_id
+      in: path
+      description: ID of the user
+      required: true
+      schema:
+        type: string
+  messageTraits:
+    userTaskUpdate:
+      summary: Updated information for a user's task
+      payloadRef: "#/components/schemas/task"
+    userCategoryUpdate:
+      summary: Updated information for a user's category
+      payloadRef: "#/components/schemas/category"
+  schemas:
+    task:
+      type: object
+      properties:
+        task_id:
+          type: string
+        user_id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        due_date:
+          type: string
+          nullable: true
+        priority:
+          type: string
+        category_id:
+          type: string
+          nullable: true
+        is_completed:
+          type: boolean
+        created_at:
+          type: string
+        updated_at:
+          type: string
+    category:
+      type: object
+      properties:
+        category_id:
+          type: string
+        user_id:
+          type: string
+        name:
+          type: string
+        color_code:
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string

@@ -1,0 +1,21 @@
+{
+  "timestamp": 1754356753613,
+  "operation": {
+    "id": "backend:tests:main"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/server.test.js",
+      "type": "text",
+      "size": 5807,
+      "dependencies": false
+    },
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/jest.config.js",
+      "type": "text",
+      "size": 206,
+      "dependencies": false
+    }
+  ]
+}

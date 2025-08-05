@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356709153,
+  "operation": {
+    "id": "backend:server:main"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/server.ts",
+      "type": "text",
+      "size": 18516,
+      "dependencies": false
+    }
+  ]
+}

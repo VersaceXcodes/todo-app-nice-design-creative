@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356750110,
+  "operation": {
+    "id": "settings:config:package"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/vitereact/package.json",
+      "type": "text",
+      "size": 2980,
+      "dependencies": true
+    }
+  ]
+}

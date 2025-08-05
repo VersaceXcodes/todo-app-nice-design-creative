@@ -1,0 +1,19 @@
+{
+  "timestamp": 1754356793805,
+  "operation": {
+    "id": "webapp:react:views",
+    "refs": {
+      "id": "UV_Onboarding",
+      "version": "1754356775300"
+    }
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/vitereact/src/components/views/UV_Onboarding.tsx",
+      "type": "text",
+      "size": 4151,
+      "dependencies": false
+    }
+  ]
+}

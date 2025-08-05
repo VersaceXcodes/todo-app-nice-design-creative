@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356561240,
+  "operation": {
+    "id": "db:schemas:zod"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/schema.ts",
+      "type": "text",
+      "size": 7503,
+      "dependencies": false
+    }
+  ]
+}

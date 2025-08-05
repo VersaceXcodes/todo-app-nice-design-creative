@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356599615,
+  "operation": {
+    "id": "backend:specifications:asyncapi"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/asyncapi.yaml",
+      "type": "text",
+      "size": 4381,
+      "dependencies": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": 1754356821930,
+  "operation": {
+    "id": "webapp:react:views",
+    "refs": {
+      "id": "GV_TopNav",
+      "version": "latest"
+    }
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/vitereact/src/components/views/GV_TopNav.tsx",
+      "type": "text",
+      "size": 3670,
+      "dependencies": false
+    }
+  ]
+}

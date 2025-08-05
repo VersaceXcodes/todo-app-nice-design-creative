@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356599890,
+  "operation": {
+    "id": "backend:specifications:openapi"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/openapi.yaml",
+      "type": "text",
+      "size": 16569,
+      "dependencies": false
+    }
+  ]
+}

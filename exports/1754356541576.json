@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356541576,
+  "operation": {
+    "id": "db:postgres"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/db.sql",
+      "type": "text",
+      "size": 3491,
+      "dependencies": false
+    }
+  ]
+}

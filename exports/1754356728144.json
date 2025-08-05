@@ -1,0 +1,15 @@
+{
+  "timestamp": 1754356728144,
+  "operation": {
+    "id": "settings:config:package"
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/backend/.env",
+      "type": "text",
+      "size": 460,
+      "dependencies": false
+    }
+  ]
+}

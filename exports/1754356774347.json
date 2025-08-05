@@ -1,0 +1,19 @@
+{
+  "timestamp": 1754356774347,
+  "operation": {
+    "id": "webapp:react:root",
+    "refs": {
+      "id": "app",
+      "version": "1754356754800"
+    }
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/vitereact/src/App.tsx",
+      "type": "text",
+      "size": 4082,
+      "dependencies": false
+    }
+  ]
+}

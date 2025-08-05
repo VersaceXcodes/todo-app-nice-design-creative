@@ -1,0 +1,19 @@
+{
+  "timestamp": 1754356806573,
+  "operation": {
+    "id": "webapp:react:views",
+    "refs": {
+      "id": "GV_SideMenu",
+      "version": "1754356775508"
+    }
+  },
+  "projectId": "todo-app-nice-design-creative",
+  "files": [
+    {
+      "path": "../../apps/todo-app-nice-design-creative/vitereact/src/components/views/GV_SideMenu.tsx",
+      "type": "text",
+      "size": 2526,
+      "dependencies": false
+    }
+  ]
+}
